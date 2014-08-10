@@ -1,6 +1,12 @@
 Setup
 =======
 
+Based on the following articles and repos:
+
+* [Blogging With Jekyll, Haml and Sass On Github Pages](http://agelber.com/blog/jekyll-haml-sass-on-github-pages/)
+* [Compass 1.0](http://beta.compass-style.org/help/)
+* [Jekyll Now](https://github.com/barryclark/jekyll-now)
+
 ## Local Environment
 
 Run the following to setup your local environment:
