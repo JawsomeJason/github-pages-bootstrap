@@ -5,36 +5,37 @@
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta content='IE=edge' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
-    <title>{% if page.title %} – {% endif %} –</title>
-    <meta content='' name='author'>
-    <meta content='' name='description'>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <meta content='{{ site.name }}' name='author'>
+    <meta content='{{ site.description }}' name='description'>
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
     <![endif]-->
-    <link href='/styles/site.css' rel='stylesheet' type='text/css'>
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <link href='{{ site.baseurl }}/styles/site.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class='wrapper-masthead'>
       <div class='container'>
         <header class='masthead clearfix'>
-          <a class='site-avatar' href='/'>
-            <img src=''>
+          <a class='site-avatar' href='{{ site.baseurl }}/'>
+            <img src='{{ site.avatar }}'>
           </a>
           <div class='site-info'>
             <h1 class='site-name'>
-              <a href='/'></a>
+              <a href='{{ site.baseurl }}/'>{{ site.name }}</a>
             </h1>
-            <p class='site-description'></p>
+            <p class='site-description'>{{ site.description }}</p>
           </div>
           <nav>
-            <a href='/'>Blog</a>
-            <a href='/about'>About</a>
+            <a href='{{ site.baseurl }}/'>Blog</a>
+            <a href='{{ site.baseurl }}/about'>About</a>
           </nav>
         </header>
       </div>
     </div>
-    <div class='container' id='main' role='main'></div>
+    <div class='container' id='main' role='main'>
+      {{ content }}
+    </div>
     <div class='wrapper-footer'>
       <div class='container'>
         <footer class='footer'>
