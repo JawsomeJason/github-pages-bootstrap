@@ -1,7 +1,7 @@
 Setup
 =======
 
-# Local Environment
+## Local Environment
 
 Run the following to setup your local environment:
 
@@ -10,15 +10,15 @@ Run the following to setup your local environment:
 bundle
 ```
 
-# Jekyll Setup
+## Jekyll Setup
 
 Edit the [Jekyll configuration](_config.yml)
 
-# Site Content
+## Site Content
 
 Create and edit layout, content and post files
 
-# Test Site and Content
+## Test Site and Content
 
 Run the following commands to compile your site and test it locally
 
@@ -30,6 +30,6 @@ rake build
 jekyll serve
 ```
 
-# Publishing
+## Publishing
 
 To take your changes live, just push to github
