@@ -64,6 +64,313 @@ table {
   box-sizing: border-box;
 }
 
+/**************/
+/* BASE RULES */
+/**************/
+/* line 6, ../_scss/_demo.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 10, ../_scss/_demo.scss */
+body {
+  background: white;
+  font: 18px/1.4 Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+/* line 16, ../_scss/_demo.scss */
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* line 23, ../_scss/_demo.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222222;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+}
+@media screen and (max-width: 640px) {
+  /* line 23, ../_scss/_demo.scss */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+}
+
+/* line 37, ../_scss/_demo.scss */
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+}
+/* line 40, ../_scss/_demo.scss */
+h1 a {
+  color: inherit;
+}
+
+/* line 45, ../_scss/_demo.scss */
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+/* line 50, ../_scss/_demo.scss */
+h3 {
+  font-size: 18px;
+}
+
+/* line 54, ../_scss/_demo.scss */
+h4 {
+  font-size: 18px;
+  color: #666666;
+}
+
+/* line 59, ../_scss/_demo.scss */
+p {
+  margin: 15px 0;
+}
+
+/* line 63, ../_scss/_demo.scss */
+a {
+  color: #4183c4;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 67, ../_scss/_demo.scss */
+a:hover, a:active {
+  color: #4183c4;
+}
+
+/* line 72, ../_scss/_demo.scss */
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+/* line 77, ../_scss/_demo.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 81, ../_scss/_demo.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 85, ../_scss/_demo.scss */
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+/* line 89, ../_scss/_demo.scss */
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+/* line 93, ../_scss/_demo.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 97, ../_scss/_demo.scss */
+strong, b {
+  font-weight: 600;
+}
+
+/* line 101, ../_scss/_demo.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 105, ../_scss/_demo.scss */
+.date {
+  font-style: italic;
+  color: #666666;
+}
+
+/* line 111, ../_scss/_demo.scss */
+::-moz-selection {
+  color: black;
+  background: #eeeeee;
+}
+
+/* line 115, ../_scss/_demo.scss */
+::selection {
+  color: black;
+  background: #eeeeee;
+}
+
+/* line 122, ../_scss/_demo.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 128, ../_scss/_demo.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+/* line 140, ../_scss/_demo.scss */
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+/* line 144, ../_scss/_demo.scss */
+.masthead {
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+@media screen and (max-width: 640px) {
+  /* line 144, ../_scss/_demo.scss */
+  .masthead {
+    text-align: center;
+  }
+}
+
+/* line 153, ../_scss/_demo.scss */
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 640px) {
+  /* line 153, ../_scss/_demo.scss */
+  .site-avatar {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* line 165, ../_scss/_demo.scss */
+.site-avatar img {
+  border-radius: 5px;
+}
+
+/* line 170, ../_scss/_demo.scss */
+.site-info {
+  float: left;
+}
+@media screen and (max-width: 640px) {
+  /* line 170, ../_scss/_demo.scss */
+  .site-info {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* line 180, ../_scss/_demo.scss */
+.site-name {
+  margin: 0;
+  color: #333333;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* line 190, ../_scss/_demo.scss */
+.site-description {
+  margin: -5px 0 0 0;
+  color: #666666;
+  font-size: 16px;
+}
+@media screen and (max-width: 640px) {
+  /* line 190, ../_scss/_demo.scss */
+  .site-description {
+    margin: 3px 0;
+  }
+}
+
+/* line 200, ../_scss/_demo.scss */
+nav {
+  float: right;
+  margin-top: 23px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+@media screen and (max-width: 640px) {
+  /* line 200, ../_scss/_demo.scss */
+  nav {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+}
+/* line 213, ../_scss/_demo.scss */
+nav a {
+  margin-left: 20px;
+  color: #333333;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 640px) {
+  /* line 213, ../_scss/_demo.scss */
+  nav a {
+    margin: 0 10px;
+    color: #4183c4;
+  }
+}
+
+/* line 231, ../_scss/_demo.scss */
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* line 236, ../_scss/_demo.scss */
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+/* line 242, ../_scss/_demo.scss */
+.post blockquote {
+  margin: 1.8em .8em;
+  border-left: 2px solid #666666;
+  padding: 0.1em 1em;
+  color: #666666;
+  font-size: 22px;
+  font-style: italic;
+}
+/* line 251, ../_scss/_demo.scss */
+.post .comments {
+  margin-top: 10px;
+}
+/* line 255, ../_scss/_demo.scss */
+.post .read-more {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* line 261, ../_scss/_demo.scss */
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #eeeeee;
+}
+
+/* line 268, ../_scss/_demo.scss */
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
 /***********************/
 /* SYNTAX HIGHLIGHTING */
 /***********************/
@@ -497,3 +804,10 @@ code {
 .highlight .il {
   color: #2aa198;
 }
+
+/* line 5, ../_scss/site.scss */
+body {
+  color: blue;
+}
+
+/*# sourceMappingURL=site.css.map */

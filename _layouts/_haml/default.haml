@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0", name: "viewport"}/
+    %title {% if page.title %} – {% endif %} –
+    %meta{content: "", name: "author"}/
+    %meta{content: "", name: "description"}/
+    /[if lt IE 9]
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    %link{href: "/styles/site.css", rel: "stylesheet", type: "text/css"}/
+    / Created with Jekyll Now - http://github.com/barryclark/jekyll-now
+  %body
+    .wrapper-masthead
+      .container
+        %header.masthead.clearfix
+          %a.site-avatar{href: "/"}
+            %img{src: ""}/
+          .site-info
+            %h1.site-name
+              %a{href: "/"}
+            %p.site-description
+          %nav
+            %a{href: "/"} Blog
+            %a{href: "/about"} About
+    #main.container{role: "main"}
+
+    .wrapper-footer
+      .container
+        %footer.footer
+          {% include svg-icons.html %}
+    {% include analytics.html %}

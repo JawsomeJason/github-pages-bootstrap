@@ -1,2 +1,7 @@
-@import 'reset';
-@import 'highlights';
+@import "reset";
+@import 'demo';
+@import "highlights";
+
+body {
+  color: blue;
+}
